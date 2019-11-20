@@ -14,12 +14,12 @@ class CreateTableTiendas extends Migration
     public function up()
     {
         Schema::create('tiendas', function (Blueprint $table) {
-            $table->bigIncrements('id',20);
-            $table->varchar('name',20);
-            $table->longtext('description');
-            $table->varchar('password',255);
-            $table->varchar('email',50);
-            $table->int('likes',11);
+            $table->bigIncrements('id');
+            $table->string('name',20);
+            $table->string('description');
+            $table->string('password',255);
+            $table->string('email',50);
+            $table->integer('likes');
             $table->timestamps();
         });
     }

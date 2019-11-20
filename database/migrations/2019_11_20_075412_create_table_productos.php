@@ -14,10 +14,10 @@ class CreateTableProductos extends Migration
     public function up()
     {
         Schema::create('productos', function (Blueprint $table) {
-            $table->bigIncrements('id',20);
-            $table->varchar('name',30);
-            $table->longtext('description');
-            $table->int('stock',11);
+            $table->bigIncrements('id');
+            $table->string('name',30);
+            $table->string('description',300);
+            $table->integer('stock');
             $table->double('price',5,2);
             $table->timestamps();
         });

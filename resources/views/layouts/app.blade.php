@@ -15,6 +15,7 @@
             <div class="links">
                 <a href="">Menu</a>
                 <a href="git">git</a>
+                <a href="tiendas/create">Crear Tienda</a>
 
             </div>
             <hr><br><br>
